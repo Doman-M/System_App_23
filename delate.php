@@ -1,3 +1,8 @@
+<?php 
+    declare(strict_types=1);
+    require_once dirname(__FILE__) . '/functions.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,8 +15,8 @@
     <h1>出欠管理システム</h1>
     <h2>削除ページ</h2>
 
-    <form action="delate.html" method="post">
-        <label>名前またはID</label>
+    <form action="delate_result.php" method="GET">
+        <label>名前またはIDで検索する</label>
         <input type="text" name="name">
 
         <input type="submit" name="submit" value="検索">
